@@ -238,7 +238,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -271,7 +271,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -281,6 +281,7 @@ const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
     "Some of the Certifications I have earned!",
+  display: true,
 
   achievementsCards: [
     {
@@ -389,7 +390,7 @@ const achievementSection = {
 }
 
   ],
-  display: true // Set false to hide this section, defaults to true
+ // display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -451,10 +452,11 @@ const podcastSection = {
 // Resume Section
 const resumeSection = {
   title: "Resume",
+  display: true,
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+ // display: true // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
