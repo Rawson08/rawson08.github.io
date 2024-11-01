@@ -26,7 +26,7 @@ const greeting = {
     "A senior Computer Science student at UNM and passionate Software Developer 🚀 having personal and academic experience of building Web applications and mini-games with Java / JavaScript / Reactjs / Nodejs / Angular / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1xGNV03xavek_TPCXAVmzzne6j36iYw1q/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1O6OdLEjAqo8XDcYIKwbpg0NRF07JALKZ/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -280,59 +280,116 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Some of the Certifications I have earned!",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
+  title: "What Is Generative AI",
+  subtitle:
+    "Course covering Generative AI tools, Artificial Intelligence, and Generative AI basics.",
+  image: require("./assets/images/generativeAI.webp"),
+  imageAlt: "Generative AI Logo",
+  footerLink: [
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      name: "Certification",
+      url: "https://drive.google.com/file/d/1JB8lvVDmBjoLKExDcVmqfBWHjdXIhI9j/view?usp=sharing"
     }
+  ]
+},
+{
+  title: "Generative AI: The Evolution of Thoughtful Online Search",
+  subtitle:
+    "Course covering Search Engine Technology, AI for Business, and Generative AI.",
+  image: require("./assets/images/thoughtfulSearch.webp"),
+  imageAlt: "Generative AI Thoughtful Search Logo",
+  footerLink: [
+    {
+      name: "Certification",
+      url: "https://drive.google.com/file/d/1gZKw9SjlRK_aqaFWHWEvCyqBvE3VtsXk/view?usp=sharing"
+    }
+  ]
+},
+{
+  title: "Streamlining Your Work with Microsoft Copilot",
+  subtitle:
+    "Course on using Microsoft Copilot for productivity improvement and AI for Business.",
+  image: require("./assets/images/microsoftCopilot.webp"),
+  imageAlt: "Microsoft Copilot Logo",
+  footerLink: [
+    {
+      name: "Certification",
+      url: "https://drive.google.com/file/d/1cUiFZEof5Qh3eMU9nrFg8t1jRJR_1F6T/view?usp=sharing"
+    }
+  ]
+},
+{
+  title: "Learning Microsoft 365 Copilot",
+  subtitle:
+    "Course on Microsoft 365 tools and Microsoft Copilot for enhanced productivity.",
+  image: require("./assets/images/microsoft365Copilot.webp"),
+  imageAlt: "Microsoft 365 Copilot Logo",
+  footerLink: [
+    {
+      name: "Certification",
+      url: "https://drive.google.com/file/d/1mne3Ne2Lw8-AaJlA1EA9OvsmGEOm7K6s/view?usp=sharing"
+    }
+  ]
+},
+{
+  title: "Ethics in the Age of Generative AI",
+  subtitle:
+    "Course on Responsible AI and Computer Ethics in the context of Generative AI.",
+  image: require("./assets/images/ethicsGenerativeAI.webp"),
+  imageAlt: "Ethics in AI Logo",
+  footerLink: [
+    {
+      name: "Certification",
+      url: "https://drive.google.com/file/d/1cjADdxGtzKKsyqQoM-7HLANKk8GX-AjK/view?usp=sharing"
+    }
+  ]
+},
+{
+  title: "Introduction to Artificial Intelligence",
+  subtitle:
+    "Course covering fundamentals of AI, AI for Business, and its applications.",
+  image: require("./assets/images/introAI.webp"),
+  imageAlt: "Introduction to AI Logo",
+  footerLink: [
+    {
+      name: "Certification",
+      url: "https://drive.google.com/file/d/1HYHoHQZowcDX9nqzHbcatqegGRuTVEtV/view?usp=sharing"
+    }
+  ]
+},
+{
+  title: "Career Essentials in Generative AI by Microsoft and LinkedIn",
+  subtitle:
+    "Learning path covering AI, Generative AI, and Computer Ethics.",
+  image: require("./assets/images/careerGenerativeAI.webp"),
+  imageAlt: "Career Essentials AI Logo",
+  footerLink: [
+    {
+      name: "Certification",
+      url: "https://drive.google.com/file/d/1qDxGWbqBUqkCNS3OaRbRW6P1RO82r8bf/view?usp=drive_link"
+    }
+  ]
+},
+{
+  title: "Introduction to Prompt Engineering for Generative AI (2023)",
+  subtitle:
+    "Course on Prompt Engineering techniques for working with Generative AI.",
+  image: require("./assets/images/promptEngineering.webp"),
+  imageAlt: "Prompt Engineering Logo",
+  footerLink: [
+    {
+      name: "Certification",
+      url: "https://drive.google.com/file/d/1_2eJQIWNmeg5LMi6uHAKzA7PcdRtgNzO/view?usp=sharing"
+    }
+  ]
+}
+
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -412,7 +469,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "rawson08", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  display: true // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
