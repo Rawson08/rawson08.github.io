@@ -13,13 +13,10 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
   }
 
-html {
-    scroll-behavior: smooth;
-  }
-  
   
   body {
     background-color: var(--background-color);
@@ -122,7 +119,7 @@ html {
   
   .project-card p {
     margin-bottom: 15px;
-    color: #555;
+    color: #555;n 
   }
   
   .project-card a {
