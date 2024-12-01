@@ -5,284 +5,383 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roshan Subedi's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav>
+    <div class="theme-wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="dark-mode-toggle">
+          <input type="checkbox" id="dark-mode" />
+          <label for="dark-mode">🌙</label>
+        </div>
+      </header>
+
+      <section id="home">
+        <h1>Hi, I'm Roshan Subedi</h1>
+        <p>Aspiring Software Developer | Full-Stack Enthusiast</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Grocery list App</h3>
+            <p>A simple app to manage grocery items.</p>
+            <a href="https://roshansubedi.me/groceries-list" target="_blank"
+              >Live Demo</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>Roshan's AppHub</h3>
+            <p>User registration and account management to access my apps.</p>
+            <a href="https://roshansubedi.me/my-apps" target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Work Experience</a></li>
-          <li><a href="#certificates">Certificates</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Angular, Node.js</li>
+          <li>PostgreSQL, MySQL, MongoDB</li>
+          <li>RESTful APIs, Express.js</li>
+          <li>Version Control: Git/GitHub</li>
+          <li>Problem Solving and Debugging</li>
         </ul>
-      </nav>
-    </header>
+      </section>
 
-    <section id="home">
-      <h1>Hi, I'm Roshan Subedi</h1>
-      <p>Aspiring Software Developer | Full-Stack Enthusiast</p>
-    </section>
+      <section id="experience">
+        <h2>Work Experience</h2>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Grocery list App</h3>
-          <p>A simple app to manage grocery items.</p>
-          <a href="https://roshansubedi.me/groceries-list" target="_blank"
-            >Live Demo</a
-          >
+        <div class="experience-item">
+          <h3>Software Engineer (Personal Projects)</h3>
+          <p>Aug 2021 - Present | Albuquerque, NM</p>
+          <p>
+            - Developed a personal expense management application using
+            JavaScript, Angular, and NodeJS, incorporating features like data
+            visualization, user authentication, and cloud storage.<br />
+            - Designed and implemented database schemas using SQL, optimizing
+            data storage, and explored NoSQL databases for scalability.<br />
+            - Created intuitive front-end interfaces with HTML, CSS, and
+            JavaScript to enhance user experience.<br />
+            - Followed agile principles to iteratively improve the application,
+            incorporating user feedback.<br />
+            - Ensured data privacy by implementing security measures such as
+            data encryption for sensitive information.
+          </p>
         </div>
-        <div class="project-card">
-          <h3>Roshan's AppHub</h3>
-          <p>User registration and account management to access my apps.</p>
-          <a href="https://roshansubedi.me/my-apps" target="_blank"
-            >Live Demo</a
-          >
+
+        <div class="experience-item">
+          <h3>Annex Supervisor (IT Classroom Academics, UNM)</h3>
+          <p>Feb 2022 - Present | Albuquerque, NM</p>
+          <p>
+            - Supervised daily IT operations, provided technical support for
+            classroom technologies, and maintained stakeholder relationships to
+            enhance operational efficiency.<br />
+            - Managed a team of student consultants, ensuring adherence to
+            policies and fostering a positive work environment, resulting in
+            improved productivity.<br />
+            - Addressed inquiries and complaints professionally, enhancing
+            customer satisfaction and client relationships.<br />
+            - Adapted to additional responsibilities and led team efforts,
+            boosting morale and performance.
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>React, Angular, Node.js</li>
-        <li>PostgreSQL, MySQL, MongoDB</li>
-        <li>RESTful APIs, Express.js</li>
-        <li>Version Control: Git/GitHub</li>
-        <li>Problem Solving and Debugging</li>
-      </ul>
-    </section>
+      <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="slideshow-container">
+          <!-- Slide 1 -->
+          <div class="slide fade">
+            <iframe
+              src="assets/files/CertificateOfCompletion_Learning Microsoft 365 Copilot.pdf"
+              width="100%"
+              height="500px"
+            ></iframe>
+            <p class="description">
+              <strong>Learning Microsoft 365 Copilot</strong><br />
+              A course focused on leveraging AI tools within Microsoft 365 for
+              enhanced productivity and business use.
+            </p>
+          </div>
 
-    <section id="experience">
-      <h2>Work Experience</h2>
+          <!-- Slide 2 -->
+          <div class="slide fade">
+            <iframe
+              src="assets/files/CertificateOfCompletion_What Is Generative AI.pdf"
+              width="100%"
+              height="500px"
+            ></iframe>
+            <p class="description">
+              <strong>What Is Generative AI?</strong><br />
+              Introduction to the tools, techniques, and potential of generative
+              AI across various fields.
+            </p>
+          </div>
 
-      <div class="experience-item">
-        <h3>Software Engineer (Personal Projects)</h3>
-        <p>Aug 2021 - Present | Albuquerque, NM</p>
+          <!-- Slide 3 -->
+          <div class="slide fade">
+            <iframe
+              src="assets/files/CertificateOfCompletion_Introduction to Prompt Engineering for Generative AI 2023.pdf"
+              width="100%"
+              height="500px"
+            ></iframe>
+            <p class="description">
+              <strong>Introduction to Prompt Engineering</strong><br />
+              A detailed guide on designing effective prompts for generative AI
+              applications.
+            </p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="slide fade">
+            <iframe
+              src="assets/files/CertificateOfCompletion_Ethics in the Age of Generative AI.pdf"
+              width="100%"
+              height="500px"
+            ></iframe>
+            <p class="description">
+              <strong>Ethics in the Age of Generative AI</strong><br />
+              An exploration of ethical challenges and responsibilities in using
+              generative AI technologies.
+            </p>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="slide fade">
+            <iframe
+              src="assets/files/CertificateOfCompletion_Introduction to Artificial Intelligence.pdf"
+              width="100%"
+              height="500px"
+            ></iframe>
+            <p class="description">
+              <strong>Introduction to Artificial Intelligence</strong><br />
+              A foundational course on the principles and applications of
+              artificial intelligence in business and technology.
+            </p>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="slide fade">
+            <iframe
+              src="assets/files/CertificateOfCompletion_Career Essentials in Generative AI by Microsoft and LinkedIn.pdf"
+              width="100%"
+              height="500px"
+            ></iframe>
+            <p class="description">
+              <strong>Career Essentials in Generative AI</strong><br />
+              A comprehensive learning path by Microsoft and LinkedIn on the
+              basics and applications of generative AI.
+            </p>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="slide fade">
+            <iframe
+              src="assets/files/CertificateOfCompletion_Streamlining Your Work with Microsoft Copilot.pdf"
+              width="100%"
+              height="500px"
+            ></iframe>
+            <p class="description">
+              <strong>Streamlining Your Work with Microsoft Copilot</strong
+              ><br />
+              A practical guide on boosting productivity with Microsoft Copilot
+              tools.
+            </p>
+          </div>
+
+          <!-- Slide 8 -->
+          <div class="slide fade">
+            <iframe
+              src="assets/files/CertificateOfCompletion_Generative AI The Evolution of Thoughtful Online Search.pdf"
+              width="100%"
+              height="500px"
+            ></iframe>
+            <p class="description">
+              <strong
+                >Generative AI: The Evolution of Thoughtful Online
+                Search</strong
+              ><br />
+              Insights into the role of generative AI in advancing online search
+              technologies.
+            </p>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots for Navigation -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+          <h3>University of New Mexico</h3>
+          <p>Aug 2021 - May 2025 | Albuquerque, NM</p>
+          <p>
+            <strong>Bachelor of Science in Computer Science</strong><br />
+            Minor: Mathematics<br />
+            <em>Cumulative GPA:</em> 3.50/4.00
+          </p>
+          <p><strong>Relevant Coursework:</strong></p>
+          <ul>
+            <li>Data Structures & Algorithms</li>
+            <li>Software Engineering</li>
+            <li>Database Management (SQL, NoSQL)</li>
+            <li>Operating Systems</li>
+            <li>Design of Large Programs</li>
+            <li>Java, C, Python, Assembly, Haskell, VHDL</li>
+          </ul>
+          <p><strong>Achievements:</strong></p>
+          <ul>
+            <li>
+              Dean's List, School of Engineering: Recognized multiple semesters
+              for GPA 3.5+ (Fall 2021, Fall 2022, Spring 2024).
+            </li>
+            <li>
+              International Amigo Scholarship: Maintained GPA 3.0+ for in-state
+              tuition benefits.
+            </li>
+            <li>
+              SoE Student Success Scholarship: Awarded $1,000 for academic
+              excellence.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="resume">
+        <h2>Resume</h2>
         <p>
-          - Developed a personal expense management application using
-          JavaScript, Angular, and NodeJS, incorporating features like data
-          visualization, user authentication, and cloud storage.<br />
-          - Designed and implemented database schemas using SQL, optimizing data
-          storage, and explored NoSQL databases for scalability.<br />
-          - Created intuitive front-end interfaces with HTML, CSS, and
-          JavaScript to enhance user experience.<br />
-          - Followed agile principles to iteratively improve the application,
-          incorporating user feedback.<br />
-          - Ensured data privacy by implementing security measures such as data
-          encryption for sensitive information.
+          You can view a preview of my resume below. To download it, click the
+          link:
         </p>
-      </div>
 
-      <div class="experience-item">
-        <h3>Annex Supervisor (IT Classroom Academics, UNM)</h3>
-        <p>Feb 2022 - Present | Albuquerque, NM</p>
+        <!-- Resume Preview -->
+        <div class="resume-preview">
+          <iframe
+            src="assets/files/Roshan_Subedi_Resume.pdf"
+            width="100%"
+            height="600px"
+            title="Resume Preview"
+          ></iframe>
+        </div>
+
+        <!-- Download Button -->
+        <a
+          href="assets/files/Roshan_Subedi_Resume.pdf"
+          target="_blank"
+          class="download-button"
+          >Download Resume</a
+        >
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
         <p>
-          - Supervised daily IT operations, provided technical support for
-          classroom technologies, and maintained stakeholder relationships to
-          enhance operational efficiency.<br />
-          - Managed a team of student consultants, ensuring adherence to
-          policies and fostering a positive work environment, resulting in
-          improved productivity.<br />
-          - Addressed inquiries and complaints professionally, enhancing
-          customer satisfaction and client relationships.<br />
-          - Adapted to additional responsibilities and led team efforts,
-          boosting morale and performance.
+          Hello! I’m Roshan Subedi, a senior Computer Science student with a
+          deep passion for full-stack development and problem-solving. I thrive
+          on building intuitive, scalable, and efficient web applications that
+          bridge the gap between design and functionality.
         </p>
-      </div>
-    </section>
+        <p>
+          Over the years, I’ve honed my skills in modern web technologies,
+          including HTML, CSS, JavaScript, React, NodeJS, Angular, PostgreSQL,
+          MySQL, and MongoDB. My academic and professional experiences have
+          equipped me with a strong foundation in both front-end and back-end
+          development, making me a versatile developer ready to tackle
+          challenges across the stack.
+        </p>
+        <p>
+          Beyond coding, I’m a team player who values collaboration and
+          continuous learning. Whether it’s brainstorming ideas, solving complex
+          algorithms, or mentoring peers, I enjoy contributing to a shared goal
+          and growing alongside my team.
+        </p>
+        <p>
+          My mission is to use technology to create impactful solutions that
+          improve lives and empower businesses. Let’s connect and turn ideas
+          into reality!
+        </p>
+      </section>
 
-    <section id="certificates">
-      <h2>Certificates</h2>
-      <div class="slideshow-container">
-        <!-- Slide 1 -->
-        <div class="slide fade">
-          <iframe
-            src="assets/files/CertificateOfCompletion_Learning Microsoft 365 Copilot.pdf"
-            width="100%"
-            height="500px"
-          ></iframe>
-          <p class="description">
-            <strong>Learning Microsoft 365 Copilot</strong><br />
-            A course focused on leveraging AI tools within Microsoft 365 for
-            enhanced productivity and business use.
-          </p>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+          Feel free to reach out to me via email or connect with me on my social
+          media platforms!
+        </p>
+        <div class="social-icons">
+          <!-- Email -->
+          <a href="mailto:roshansbd8@gmail.com" target="_blank" title="Email">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+          <!-- GitHub -->
+          <a href="https://github.com/Rawson08" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <!-- LinkedIn -->
+          <a
+            href="https://linkedin.com/in/roshansbd"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://twitter.com/roshansbd"
+            target="_blank"
+            title="Twitter"
+          >
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+          <!-- Instagram -->
+          <a
+            href="https://instagram.com/raw_son_sbd"
+            target="_blank"
+            title="Instagram"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
         </div>
+      </section>
 
-        <!-- Slide 2 -->
-        <div class="slide fade">
-          <iframe
-            src="assets/files/CertificateOfCompletion_What Is Generative AI.pdf"
-            width="100%"
-            height="500px"
-          ></iframe>
-          <p class="description">
-            <strong>What Is Generative AI?</strong><br />
-            Introduction to the tools, techniques, and potential of generative
-            AI across various fields.
-          </p>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="slide fade">
-          <iframe
-            src="assets/files/CertificateOfCompletion_Introduction to Prompt Engineering for Generative AI 2023.pdf"
-            width="100%"
-            height="500px"
-          ></iframe>
-          <p class="description">
-            <strong>Introduction to Prompt Engineering</strong><br />
-            A detailed guide on designing effective prompts for generative AI
-            applications.
-          </p>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="slide fade">
-          <iframe
-            src="assets/files/CertificateOfCompletion_Ethics in the Age of Generative AI.pdf"
-            width="100%"
-            height="500px"
-          ></iframe>
-          <p class="description">
-            <strong>Ethics in the Age of Generative AI</strong><br />
-            An exploration of ethical challenges and responsibilities in using
-            generative AI technologies.
-          </p>
-        </div>
-
-        <!-- Slide 5 -->
-        <div class="slide fade">
-          <iframe
-            src="assets/files/CertificateOfCompletion_Introduction to Artificial Intelligence.pdf"
-            width="100%"
-            height="500px"
-          ></iframe>
-          <p class="description">
-            <strong>Introduction to Artificial Intelligence</strong><br />
-            A foundational course on the principles and applications of
-            artificial intelligence in business and technology.
-          </p>
-        </div>
-
-        <!-- Slide 6 -->
-        <div class="slide fade">
-          <iframe
-            src="assets/files/CertificateOfCompletion_Career Essentials in Generative AI by Microsoft and LinkedIn.pdf"
-            width="100%"
-            height="500px"
-          ></iframe>
-          <p class="description">
-            <strong>Career Essentials in Generative AI</strong><br />
-            A comprehensive learning path by Microsoft and LinkedIn on the
-            basics and applications of generative AI.
-          </p>
-        </div>
-
-        <!-- Slide 7 -->
-        <div class="slide fade">
-          <iframe
-            src="assets/files/CertificateOfCompletion_Streamlining Your Work with Microsoft Copilot.pdf"
-            width="100%"
-            height="500px"
-          ></iframe>
-          <p class="description">
-            <strong>Streamlining Your Work with Microsoft Copilot</strong><br />
-            A practical guide on boosting productivity with Microsoft Copilot
-            tools.
-          </p>
-        </div>
-
-        <!-- Slide 8 -->
-        <div class="slide fade">
-          <iframe
-            src="assets/files/CertificateOfCompletion_Generative AI The Evolution of Thoughtful Online Search.pdf"
-            width="100%"
-            height="500px"
-          ></iframe>
-          <p class="description">
-            <strong
-              >Generative AI: The Evolution of Thoughtful Online Search</strong
-            ><br />
-            Insights into the role of generative AI in advancing online search
-            technologies.
-          </p>
-        </div>
-
-        <!-- Navigation Arrows -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-
-      <!-- Dots for Navigation -->
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
-        <span class="dot" onclick="currentSlide(8)"></span>
-      </div>
-    </section>
-
-    <section id="resume">
-      <h2>Resume</h2>
-      <p>
-        You can view a preview of my resume below. To download it, click the
-        link:
-      </p>
-
-      <!-- Resume Preview -->
-      <div class="resume-preview">
-        <iframe
-          src="assets/files/Roshan_Subedi_Resume.pdf"
-          width="100%"
-          height="600px"
-          title="Resume Preview"
-        ></iframe>
-      </div>
-
-      <!-- Download Button -->
-      <a
-        href="assets/files/Roshan_Subedi_Resume.pdf"
-        target="_blank"
-        class="download-button"
-        >Download Resume</a
-      >
-    </section>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am a senior Computer Science student with a passion for full-stack
-        development. I specialize in creating web apps using HTML, CSS,
-        JavaScript, React, NodeJS, Angular, PostgreSQL, MySQL and MongoDB.
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>
-        Email: <a href="mailto:roshansbd8@gmail.com">roshansbd8@gmail.com</a>
-      </p>
-      <p>
-        GitHub:
-        <a href="https://github.com/Rawson08" target="_blank">GH/Rawson08</a>
-      </p>
-    </section>
-
-    <footer>
-      <p>&copy; 2024 Roshan Subedi. All Rights Reserved.</p>
-    </footer>
-
+      <footer>
+        <p>&copy; 2024 Roshan Subedi. All Rights Reserved.</p>
+      </footer>
+    </div>
     <script>
       let slideIndex = 1;
       showSlides(slideIndex);

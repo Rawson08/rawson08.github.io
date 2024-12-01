@@ -1,26 +1,43 @@
 /* General Reset */
+
+:root {
+    --background-color: #f4f4f9;
+    --text-color: #333;
+    --header-background: #333;
+    --card-background: #f9f9f9;
+    --link-color: #007acc;
+    --hover-link-color: #0056a6;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
   
   body {
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
+    transition: background-color 0.3s, color 0.3s;
   }
   
   /* Header and Navigation */
   header {
-    background: #333;
+    background-color: var(--header-background);
+    box-shadow: var(--box-shadow);
     color: #fff;
     padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   header nav ul {
@@ -86,11 +103,11 @@
   }
   
   .project-card {
-    background: #f9f9f9;
+    background: var(--card-background);
+    color: var(--text-color);
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
   
   .project-card:hover {
@@ -113,6 +130,16 @@
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+  }
+
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: var(--hover-link-color);
   }
   
   .project-card a:hover {
@@ -283,6 +310,51 @@
     background-color: #717171;
   }
   
+  /* Education Section */
+#education {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  #education h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #007acc;
+  }
+  
+  .education-item {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .education-item p {
+    margin: 10px 0;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .education-item ul {
+    list-style: disc;
+    margin: 10px 0 0 20px;
+    color: #555;
+  }
+  
+  .education-item ul li {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
   
   /* Resume Section */
 #resume {
@@ -334,11 +406,11 @@
 }
 
   
-  /* About Section */
-  #about {
+ /* About Me Section */
+#about {
     padding: 50px 20px;
+    background: #fff;
     text-align: center;
-    background: #f4f4f9;
   }
   
   #about h2 {
@@ -348,17 +420,27 @@
   }
   
   #about p {
+    margin-bottom: 15px;
     font-size: 1.2rem;
+    line-height: 1.8;
     color: #555;
     max-width: 800px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  /* Contact Section */
-  #contact {
+  @media (max-width: 768px) {
+    #about p {
+      font-size: 1rem;
+    }
+  }
+  
+  
+ /* Contact Me Section */
+#contact {
     padding: 50px 20px;
+    background: #f4f4f9;
     text-align: center;
-    background: #fff;
   }
   
   #contact h2 {
@@ -368,20 +450,38 @@
   }
   
   #contact p {
+    margin-bottom: 20px;
     font-size: 1.2rem;
     color: #555;
   }
   
-  #contact a {
-    color: #007acc;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
   }
   
-  #contact a:hover {
-    color: #0056a6;
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #555;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
   }
+  
+  .social-icons a:hover {
+    color: #007acc;
+    transform: scale(1.1);
+  }
+  
+  .social-icons i {
+    font-size: 1.5rem;
+  }
+  
   
   /* Footer */
   footer {
@@ -410,5 +510,117 @@
     #home p {
       font-size: 1.2rem;
     }
+  }
+  
+
+  /* General: Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Adjust base font size for readability */
+    }
+  
+    header nav ul {
+      flex-direction: column; /* Stack navigation items vertically */
+      align-items: center;
+    }
+  
+    header nav ul li {
+      margin: 10px 0;
+    }
+  
+    #home h1 {
+      font-size: 2rem; /* Adjust hero section text size */
+    }
+  
+    #home p {
+      font-size: 1rem;
+    }
+  
+    .slideshow-container {
+      padding: 10px;
+    }
+  
+    iframe {
+      height: 300px; /* Reduce iframe height for mobile */
+    }
+  
+    .project-grid {
+      grid-template-columns: 1fr; /* Stack projects vertically */
+    }
+  
+    .experience-item {
+      text-align: left; /* Keep experience text aligned on mobile */
+    }
+  
+    .resume-preview iframe {
+      height: 400px; /* Adjust height of resume preview */
+    }
+  
+    .download-button {
+      padding: 8px 16px; /* Adjust button padding */
+      font-size: 0.9rem; /* Reduce button text size */
+    }
+  
+    footer {
+      font-size: 0.8rem; /* Adjust footer text size */
+    }
+  }
+  
+  /* For Very Small Devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    header nav ul {
+      font-size: 0.9rem; /* Adjust navigation font size */
+    }
+  
+    #home h1 {
+      font-size: 1.8rem;
+    }
+  
+    .project-card {
+      padding: 10px; /* Reduce card padding */
+    }
+  
+    .description {
+      font-size: 0.9rem; /* Make descriptions smaller */
+    }
+  }
+
+
+/* Dark Mode Variables (Triggered by Checkbox) */
+.dark-mode-toggle input:checked ~ * {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --header-background: #1c1c1c;
+  --card-background: #1e1e1e;
+  --link-color: #66b2ff;
+  --hover-link-color: #99ccff;
+  --box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+  /* Dark Mode Toggle Styling */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .dark-mode-toggle input {
+    display: none;
+  }
+  
+  .dark-mode-toggle label {
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dark-mode-toggle input:checked + label {
+    background-color: #e0e0e0;
+    color: #333;
   }
   
