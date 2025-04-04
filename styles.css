@@ -759,14 +759,7 @@ footer {
         padding: 10px 15px;
     }
 
-    header nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    header nav ul li {
-      margin: 10px 0;
-    }
+    /* Removed conflicting header nav rules from this duplicate media query block */
 
     #home h1 {
       font-size: 2.2rem;
