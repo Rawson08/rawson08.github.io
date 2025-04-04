@@ -9,21 +9,40 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#0056a6" />
   </head>
   <body>
     <div class="theme-wrapper">
       <header>
         <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Work Experience</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <button
+            id="mobile-menu-button"
+            class="mobile-menu-button"
+            aria-label="Toggle Menu"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div id="nav-links-container" class="nav-links-container">
+            <ul id="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#certificates">Certificates</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
 
@@ -33,19 +52,91 @@
       </section>
 
       <section id="projects">
-        <h2>Projects</h2>
+        <h2>Key Projects</h2>
         <div class="project-grid">
-          <div class="project-card">
-            <h3>Grocery list App</h3>
-            <p>A simple app to manage grocery items.</p>
-            <a href="https://roshansubedi.me/groceries-list" target="_blank"
+          <div class="project-card animate-on-scroll">
+            <h3>ExpenSage – Full-Stack Expense Sharing PWA</h3>
+            <p>
+              Developed a comprehensive web app inspired by Splitwise using Java
+              (Spring Boot) and React (TypeScript) to manage shared expenses.
+              Features secure JWT authentication, group/friend management,
+              advanced split types, receipt scanning (Google Cloud Vision API),
+              AI parsing (Gemini/Vertex AI), and push notifications.
+            </p>
+            <div class="project-tech">
+              <i class="fab fa-java" title="Java/Spring Boot"></i>
+              <i class="fab fa-react" title="React/TypeScript"></i>
+              <i class="fas fa-database" title="PostgreSQL"></i>
+              <i class="fab fa-google" title="Google Cloud AI/Vision"></i>
+              <i class="fas fa-cloud" title="Cloudflare R2"></i>
+              <i class="fas fa-mobile-alt" title="PWA"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://expensage.roshansubedi.me" target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card animate-on-scroll">
+            <h3>Auction House – Scalable Web Platform</h3>
+            <p>
+              Led a 3-member team to develop a terminal-based auction system
+              with server-client architecture. Built core features including
+              item listing, bidding, and transaction closure.
+            </p>
+            <div class="project-tech">
+              <i class="fab fa-java" title="Java"></i>
+              <i class="fas fa-terminal" title="Terminal App"></i>
+            </div>
+          </div>
+
+          <div class="project-card animate-on-scroll">
+            <h3>Bomb Lab – Assembly Optimization</h3>
+            <p>
+              Optimized C and Assembly code to defuse a simulated 'bomb',
+              applying knowledge of computer architecture and low-level
+              programming techniques.
+            </p>
+            <div class="project-tech">
+              <i class="fab fa-cuttlefish" title="C/C++"></i>
+              <i class="fas fa-microchip" title="Assembly"></i>
+            </div>
+          </div>
+
+          <div class="project-card animate-on-scroll">
+            <h3>My Apps – Cloud Based Authentication System</h3>
+            <p>
+              Built a centralized dashboard to manage multiple applications with
+              shared authentication. Integrated Mailgun API for email
+              verification. Migrated infrastructure from Heroku to Railway and
+              refactored MongoDB routes to PostgreSQL.
+            </p>
+            <div class="project-tech">
+              <i class="fab fa-node-js" title="Node.js/Express"></i>
+              <i class="fas fa-database" title="PostgreSQL/MongoDB"></i>
+              <i class="fas fa-envelope" title="Mailgun API"></i>
+              <i class="fas fa-server" title="Railway/Heroku"></i>
+            </div>
+            <a href="https://roshansubedi.me/my-apps" target="_blank"
               >Live Demo</a
             >
           </div>
-          <div class="project-card">
-            <h3>Roshan's AppHub</h3>
-            <p>User registration and account management to access my apps.</p>
-            <a href="https://roshansubedi.me/my-apps" target="_blank"
+
+          <div class="project-card animate-on-scroll">
+            <h3>Groceries List Manager – Full-Stack App</h3>
+            <p>
+              Built a live groceries list application with user authentication
+              and live data updates. Emphasized usability and design
+              accessibility. Deployed using Railway.
+            </p>
+            <div class="project-tech">
+              <i class="fab fa-node-js" title="Node.js/Express"></i>
+              <i class="fab fa-react" title="React"></i>
+              <i class="fas fa-database" title="Database"></i>
+              <i class="fas fa-server" title="Railway"></i>
+            </div>
+            <a href="https://roshansubedi.me/groceries-list" target="_blank"
               >Live Demo</a
             >
           </div>
@@ -53,60 +144,120 @@
       </section>
 
       <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>React, Angular, Node.js</li>
-          <li>PostgreSQL, MySQL, MongoDB</li>
-          <li>RESTful APIs, Express.js</li>
-          <li>Version Control: Git/GitHub</li>
-          <li>Problem Solving and Debugging</li>
-        </ul>
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+            <ul>
+              <li>JavaScript (ES6+)</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Angular</li>
+              <li>HTML5</li>
+              <li>CSS3 (Tailwind, Bootstrap)</li>
+              <li>Responsive Design</li>
+              <li>Accessibility (a11y)</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <ul>
+              <li>Java (17+)</li>
+              <li>Spring Boot (Web, Data JPA, Security)</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>RESTful APIs</li>
+              <li>JWT Authentication</li>
+              <li>Python</li>
+              <li>C#</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-database"></i> Databases</h3>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>SQL</li>
+              <li>MongoDB</li>
+              <li>NoSQL</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+            <ul>
+              <li>Google Cloud (Vertex AI, Vision API)</li>
+              <li>Cloudflare R2</li>
+              <li>Git / GitHub</li>
+              <li>Maven</li>
+              <li>Vite</li>
+              <li>Railway / Heroku</li>
+              <li>Docker (Basic)</li>
+              <li>OpenAPI / Swagger</li>
+              <li>Push Notifications</li>
+              <li>Mailgun API</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Tools & Languages</h3>
+            <ul>
+              <li>IntelliJ, VS Code, C Lion</li>
+              <li>Postman</li>
+              <li>C, C++</li>
+              <li>Windows, MacOS, Linux</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-users"></i> Soft Skills</h3>
+            <ul>
+              <li>Problem Solving</li>
+              <li>Teamwork & Collaboration</li>
+              <li>Effective Communication</li>
+              <li>Critical Thinking</li>
+              <li>Quick Learner</li>
+              <li>Time Management</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section id="experience">
         <h2>Work Experience</h2>
 
-        <div class="experience-item">
-          <h3>Software Engineer (Personal Projects)</h3>
-          <p>Aug 2021 - Present | Albuquerque, NM</p>
-          <p>
-            - Developed a personal expense management application using
-            JavaScript, Angular, and NodeJS, incorporating features like data
-            visualization, user authentication, and cloud storage.<br />
-            - Designed and implemented database schemas using SQL, optimizing
-            data storage, and explored NoSQL databases for scalability.<br />
-            - Created intuitive front-end interfaces with HTML, CSS, and
-            JavaScript to enhance user experience.<br />
-            - Followed agile principles to iteratively improve the application,
-            incorporating user feedback.<br />
-            - Ensured data privacy by implementing security measures such as
-            data encryption for sensitive information.
-          </p>
-        </div>
-
-        <div class="experience-item">
-          <h3>Annex Supervisor (IT Classroom Academics, UNM)</h3>
-          <p>Feb 2022 - Present | Albuquerque, NM</p>
-          <p>
-            - Supervised daily IT operations, provided technical support for
-            classroom technologies, and maintained stakeholder relationships to
-            enhance operational efficiency.<br />
-            - Managed a team of student consultants, ensuring adherence to
-            policies and fostering a positive work environment, resulting in
-            improved productivity.<br />
-            - Addressed inquiries and complaints professionally, enhancing
-            customer satisfaction and client relationships.<br />
-            - Adapted to additional responsibilities and led team efforts,
-            boosting morale and performance.
-          </p>
+        <div class="experience-item animate-on-scroll">
+          <h3>Annex Supervisor (UNM IT)</h3>
+          <p>Feb 2022 - Present | University of New Mexico, Albuquerque, NM</p>
+          <ul>
+            <li>
+              Provided technical support and troubleshooting for faculty, staff,
+              and students in a university IT environment.
+            </li>
+            <li>
+              Assisted with system administration, database management, and web
+              application development tasks.
+            </li>
+            <li>
+              Contributed to the development and maintenance of internal tools
+              using C#, SQL, and JavaScript, focusing on improving usability and
+              efficiency for IT services.
+            </li>
+            <li>
+              Maintained SharePoint sites and managed Windows Server
+              environments.
+            </li>
+            <li>
+              Managed a team of student consultants, ensuring policy adherence
+              and fostering a positive work environment.
+            </li>
+            <li>
+              Addressed inquiries and complaints professionally, enhancing
+              customer satisfaction.
+            </li>
+          </ul>
         </div>
       </section>
 
       <section id="certificates">
         <h2>Certificates</h2>
         <div class="slideshow-container">
-          <!-- Slide 1 -->
           <div class="slide fade">
             <iframe
               src="assets/files/CertificateOfCompletion_Learning Microsoft 365 Copilot.pdf"
@@ -120,7 +271,6 @@
             </p>
           </div>
 
-          <!-- Slide 2 -->
           <div class="slide fade">
             <iframe
               src="assets/files/CertificateOfCompletion_What Is Generative AI.pdf"
@@ -134,7 +284,6 @@
             </p>
           </div>
 
-          <!-- Slide 3 -->
           <div class="slide fade">
             <iframe
               src="assets/files/CertificateOfCompletion_Introduction to Prompt Engineering for Generative AI 2023.pdf"
@@ -148,7 +297,6 @@
             </p>
           </div>
 
-          <!-- Slide 4 -->
           <div class="slide fade">
             <iframe
               src="assets/files/CertificateOfCompletion_Ethics in the Age of Generative AI.pdf"
@@ -162,7 +310,6 @@
             </p>
           </div>
 
-          <!-- Slide 5 -->
           <div class="slide fade">
             <iframe
               src="assets/files/CertificateOfCompletion_Introduction to Artificial Intelligence.pdf"
@@ -176,7 +323,6 @@
             </p>
           </div>
 
-          <!-- Slide 6 -->
           <div class="slide fade">
             <iframe
               src="assets/files/CertificateOfCompletion_Career Essentials in Generative AI by Microsoft and LinkedIn.pdf"
@@ -190,7 +336,6 @@
             </p>
           </div>
 
-          <!-- Slide 7 -->
           <div class="slide fade">
             <iframe
               src="assets/files/CertificateOfCompletion_Streamlining Your Work with Microsoft Copilot.pdf"
@@ -205,7 +350,6 @@
             </p>
           </div>
 
-          <!-- Slide 8 -->
           <div class="slide fade">
             <iframe
               src="assets/files/CertificateOfCompletion_Generative AI The Evolution of Thoughtful Online Search.pdf"
@@ -222,12 +366,10 @@
             </p>
           </div>
 
-          <!-- Navigation Arrows -->
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
 
-        <!-- Dots for Navigation -->
         <div style="text-align: center">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
@@ -240,7 +382,7 @@
         </div>
       </section>
 
-      <section id="education">
+      <section id="education" class="animate-on-scroll">
         <h2>Education</h2>
         <div class="education-item">
           <h3>University of New Mexico</h3>
@@ -248,32 +390,36 @@
           <p>
             <strong>Bachelor of Science in Computer Science</strong><br />
             Minor: Mathematics<br />
-            <em>Cumulative GPA:</em> 3.50/4.00
+            <em>Cumulative GPA:</em> 3.52 / 4.00
           </p>
           <p><strong>Relevant Coursework:</strong></p>
           <ul>
-            <li>Data Structures & Algorithms</li>
-            <li>Software Engineering</li>
             <li>Database Management (SQL, NoSQL)</li>
+            <li>Software Engineering</li>
+            <li>AI/ML</li>
             <li>Operating Systems</li>
-            <li>Design of Large Programs</li>
-            <li>Java, C, Python, Assembly, Haskell, VHDL</li>
+            <li>NLP</li>
+            <li>Computer Networks</li>
+            <li>Cloud Computing</li>
+            <li>Data Structures & Algorithms</li>
           </ul>
-          <p><strong>Achievements:</strong></p>
-          <ul>
-            <li>
-              Dean's List, School of Engineering: Recognized multiple semesters
-              for GPA 3.5+ (Fall 2021, Fall 2022, Spring 2024).
-            </li>
-            <li>
-              International Amigo Scholarship: Maintained GPA 3.0+ for in-state
-              tuition benefits.
-            </li>
-            <li>
-              SoE Student Success Scholarship: Awarded $1,000 for academic
-              excellence.
-            </li>
-          </ul>
+          <div class="honors-awards">
+            <h4>Honors & Awards</h4>
+            <ul>
+              <li>
+                Dean's List, School of Engineering: Recognized for GPA 3.5+
+                (Fall 2021, Fall 2022, Spring 2024).
+              </li>
+              <li>
+                International Amigo Scholarship: Awarded for GPA 3.0+, providing
+                in-state tuition benefits.
+              </li>
+              <li>
+                SoE - Student Success Scholarship: Received $1,000 for
+                outstanding academic performance.
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -284,7 +430,6 @@
           link:
         </p>
 
-        <!-- Resume Preview -->
         <div class="resume-preview">
           <iframe
             src="assets/files/Roshan_Subedi_Resume.pdf"
@@ -294,7 +439,6 @@
           ></iframe>
         </div>
 
-        <!-- Download Button -->
         <a
           href="assets/files/Roshan_Subedi_Resume.pdf"
           target="_blank"
@@ -339,15 +483,12 @@
           media platforms!
         </p>
         <div class="social-icons">
-          <!-- Email -->
           <a href="mailto:roshansbd8@gmail.com" target="_blank" title="Email">
             <i class="fas fa-envelope"></i> Email
           </a>
-          <!-- GitHub -->
           <a href="https://github.com/Rawson08" target="_blank" title="GitHub">
             <i class="fab fa-github"></i> GitHub
           </a>
-          <!-- LinkedIn -->
           <a
             href="https://linkedin.com/in/roshansbd"
             target="_blank"
@@ -355,15 +496,6 @@
           >
             <i class="fab fa-linkedin"></i> LinkedIn
           </a>
-          <!-- Twitter -->
-          <a
-            href="https://twitter.com/roshansbd"
-            target="_blank"
-            title="Twitter"
-          >
-            <i class="fab fa-twitter"></i> Twitter
-          </a>
-          <!-- Instagram -->
           <a
             href="https://instagram.com/raw_son_sbd"
             target="_blank"
@@ -375,7 +507,7 @@
       </section>
 
       <footer>
-        <p>&copy; 2024 Roshan Subedi. All Rights Reserved.</p>
+        <p>&copy; 2025 Roshan Subedi. All Rights Reserved.</p>
       </footer>
     </div>
     <script>
@@ -394,6 +526,8 @@
         let i;
         let slides = document.getElementsByClassName("slide");
         let dots = document.getElementsByClassName("dot");
+        if (!slides.length || !dots.length) return; // Exit if elements not found
+
         if (n > slides.length) {
           slideIndex = 1;
         }
@@ -409,6 +543,107 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
+
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
+
+      const observerCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      };
+
+      const scrollObserver = new IntersectionObserver(
+        observerCallback,
+        observerOptions
+      );
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const elementsToAnimate =
+          document.querySelectorAll(".animate-on-scroll");
+        elementsToAnimate.forEach((el) => {
+          scrollObserver.observe(el);
+        });
+
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll("#nav-links li a");
+
+        const activateNavLink = () => {
+          let currentSectionId = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+              currentSectionId = section.getAttribute("id");
+            }
+          });
+
+          navLinks.forEach((link) => {
+            link.classList.remove("active-nav");
+            if (link.getAttribute("href") === `#${currentSectionId}`) {
+              link.classList.add("active-nav");
+            }
+          });
+        };
+
+        window.addEventListener("scroll", activateNavLink);
+        activateNavLink();
+
+        if ("serviceWorker" in navigator) {
+          window.addEventListener("load", () => {
+            navigator.serviceWorker
+              .register("/sw.js")
+              .then((registration) => {
+                console.log(
+                  "ServiceWorker registration successful with scope: ",
+                  registration.scope
+                );
+              })
+              .catch((error) => {
+                console.log("ServiceWorker registration failed: ", error);
+              });
+          });
+        }
+
+        const menuButton = document.getElementById("mobile-menu-button");
+        const navLinksContainer = document.getElementById(
+          "nav-links-container"
+        );
+
+        if (menuButton && navLinksContainer) {
+          menuButton.addEventListener("click", () => {
+            const isExpanded =
+              menuButton.getAttribute("aria-expanded") === "true";
+            menuButton.setAttribute("aria-expanded", !isExpanded);
+            navLinksContainer.classList.toggle("active");
+            const icon = menuButton.querySelector("i");
+            if (icon) {
+              icon.classList.toggle("fa-bars");
+              icon.classList.toggle("fa-times");
+            }
+          });
+
+          navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (navLinksContainer.classList.contains("active")) {
+                menuButton.setAttribute("aria-expanded", "false");
+                navLinksContainer.classList.remove("active");
+                const icon = menuButton.querySelector("i");
+                if (icon) {
+                  icon.classList.remove("fa-times");
+                  icon.classList.add("fa-bars");
+                }
+              }
+            });
+          });
+        }
+      });
     </script>
   </body>
 </html>

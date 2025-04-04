@@ -1,0 +1,23 @@
+{
+  "name": "Roshan Subedi's Portfolio",
+  "short_name": "Roshan P.",
+  "description": "The personal portfolio website of Roshan Subedi, showcasing projects, skills, and experience.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f4f9",
+  "theme_color": "#007acc",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
